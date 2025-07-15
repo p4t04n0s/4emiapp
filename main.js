@@ -1,4 +1,5 @@
 const formulario = document.querySelector(".form-create");
+let id = 0;
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
     const descripcion = document.querySelector("#descripcion").value;
@@ -6,9 +7,21 @@ formulario.addEventListener("submit", (e)=>{
     contenedor.innerHTML += 
     `        
         <div class="publicacion">
-            <p>id: 00</p>
+            <p>id: ${++id}</p> 
             <p>${descripcion}</p>
-            <button>Editar</button>
-            <button>Eliminar</button>
+            <button id="editar" onclick="editar(this)">Editar</button>
+            <button id="eliminar" onclick="eliminar(this)">Eliminar</button>
         </div>`;
 });
+
+function editar(e){
+
+
+}
+
+
+function eliminar(e){
+    e.parentElement.remove();
+}
+
+
