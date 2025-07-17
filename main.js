@@ -14,14 +14,12 @@ formulario.addEventListener("submit", (e)=>{
         </div>`;
 });
 
+
 function editar(e){
-
-
 }
 
-
 function eliminar(e){
-    e.parentElement.remove();
+    e.parentElement.remove(); //el parentElement es para seleccionar lo que esta arriba, osea, el papa de todo dentro, como quiero eliminar todo.
 }
 
 
