@@ -1,5 +1,18 @@
 body{
-    background-color: #dbd385;
-    color: rgb(110, 109, 51);
+    background-color: #853f98;
+    color: rgb(228, 195, 255);
     font-family: cursive;
+}
+
+.publicacion{
+    background-color: #36163f;
+    display: flex;
+    display: block;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 50%;
+    margin-top: 2%;
+    border-radius: 20px;
+    padding-left: 20px;
+    
 }

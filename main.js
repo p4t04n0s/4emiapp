@@ -16,10 +16,18 @@ formulario.addEventListener("submit", (e)=>{
 
 
 function editar(e){
+    const parrafo = e.parentElement.querySelector("p:nth-child(2)");
+    if (e.textContent == "Editar") {
+        parrafo.contentEditable = true;
+        e.textContent = "Guardar";
+        parrafo.focus();
+    }  
+    else { 
+    e.textContent = "Editar"
+    parrafo.contentEditable = false;
+    }
 }
 
 function eliminar(e){
     e.parentElement.remove(); //el parentElement es para seleccionar lo que esta arriba, osea, el papa de todo dentro, como quiero eliminar todo.
 }
-
-
